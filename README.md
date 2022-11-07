@@ -29,7 +29,7 @@
  
 # 프로젝트 목적
 
-| 형태소 분석 및 사용자 사전을 생성하여 검색 기능 향상(도메인 딕셔너리 개발, mecab 활용)
+- 형태소 분석 및 사용자 사전을 생성하여 검색 기능 향상(도메인 딕셔너리 개발, mecab 활용)
 
 # 프로젝트 과정
 
@@ -38,3 +38,22 @@
   - mecab을 사용하는 이유는 meilisearch 패키지 중에 [lindera](https://github.com/lindera-morphology/lindera)가 있는데, lindera에서 mecab을 사용하기 때문이다
 3. 사용자 사전을 구축하기 위한 데이터 수집(OCR, 크롤링) 및 전처리하기
 
+# 성능평가
+
+![image](https://user-images.githubusercontent.com/55564114/200230779-8a9965ae-861f-454a-9774-06e14d0bd10d.png)  
+
+- Precision
+- Recall
+- F1 score
+- Precision at K (P@K )
+
+# 결과
+
+![image](https://user-images.githubusercontent.com/55564114/200230919-913ffa13-ccac-4ae9-b9db-fa065b4adcbb.png)  
+
+- F1 score 기준으로 0.7721 에서 0.8864 까지 성능이 향상하였다 
+- P@K 기준으로 0.8472 에서 0.8502 성능이 향상하였다
+
+# 전체 작업 과정
+
+![image](https://user-images.githubusercontent.com/55564114/200231129-66d3ec0a-4253-4dbf-962f-4aafe0605346.png)
